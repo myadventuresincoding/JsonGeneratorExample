@@ -28,7 +28,7 @@ public class JsonGeneratorExample {
         generator.writeStringField("model", "C300");
         generator.writeNumberField("doors", 4);
         generator.writeEndObject();
-        generator.flush();  // Flush buffered content to the output stream
+        generator.flush();  // Flush buffered JSON to the output stream
         Thread.sleep(1000);
 
         generator.writeStartObject();
@@ -36,7 +36,7 @@ public class JsonGeneratorExample {
         generator.writeStringField("model", "Focus");
         generator.writeNumberField("doors", 2);
         generator.writeEndObject();
-        generator.flush();
+        generator.flush();  // Flush buffered JSON to the output stream
         Thread.sleep(1000);
 
         generator.writeStartObject();
@@ -44,7 +44,7 @@ public class JsonGeneratorExample {
         generator.writeStringField("model", "G35");
         generator.writeNumberField("doors", 4);
         generator.writeEndObject();
-        generator.flush();
+        generator.flush();  // Flush buffered JSON to the output stream
         Thread.sleep(1000);
 
         generator.writeEndArray();
